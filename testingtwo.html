@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Height Sizing </title>
+	<style type="text/css"> 
+:root {
+  --parent-height: 500px;
+  --child-height: 50px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.parent {
+  height: var(--parent-height);
+  background-color: #bada55;
+  display:flex;
+  display: -ms-flexbox!important;
+  flex-wrap:wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.child {
+  height: var(--child-height);
+  background-color: goldenrod; 
+  width:100%;
+}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		Parent Has 500px Height
+		<div class="child">
+			child has 200px height
+		</div>
+	</div>
+</body>
+</html>
